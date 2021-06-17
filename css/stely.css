@@ -1,0 +1,106 @@
+/*Variaveis*/
+:root {
+    --vermelho: #e50914;
+    --preto: #141414;
+}
+/* Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+/* Body */
+body {
+    background: var(--preto);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #fff;
+}
+/* Header */
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+header .logo {
+    margin-left: 5px;
+    color: var(--vermelho);
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+}
+header nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #aaa;
+    margin-right: 10px;
+}
+header nav a:hover {
+    color: #fff;
+}
+
+/* MAIN */
+
+.container {
+    margin-left: 20px;
+}
+.filme-principal .container {
+    width: 65%;
+}
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url(../img/capa-house.jpg) no-repeat center;
+    /* linear-gradient usado para aumentar o contraste da imagem com o texto */
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column; /* os itens estão na vertical - um abaixo do outro */
+    justify-content: center; /* o justify content segue a orientação do flex-direction */
+    align-items: flex-start; /* os itnes se ajustam no iníco da página */
+}
+.titulo {
+    margin-top: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 60px;
+}
+.filme-principal .descricao {
+    line-height: 22px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 60%;
+}
+/* Botões */
+.botao {
+    background: rgba(0, 0, 0, .50);
+    border: none;
+    color: #fff;
+    text-transform: uppercase; 
+    padding: 15px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+.botao:hover {
+    background: #fff;  
+    color: #000;
+}
+.fas {
+    margin-right: 10px;
+}
+.box-filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+    
+}
+.box-filme:hover {
+    cursor: pointer;
+}
+.carrossel-filmes{
+    margin-top: 10px;
+}

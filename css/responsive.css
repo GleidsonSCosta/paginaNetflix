@@ -1,0 +1,13 @@
+@media screen and (max-width:750px) {
+    header .container {
+        flex-direction: column;
+        height: 100px;
+    }    
+    .filme-principal .descricao{
+        width: 100%;
+    }
+    .botao {
+        width: 150px;
+
+    }
+}
